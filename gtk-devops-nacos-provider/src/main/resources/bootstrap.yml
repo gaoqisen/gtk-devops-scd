@@ -1,0 +1,28 @@
+server:
+  port: 7003
+spring:
+  profiles:
+    active: dev
+  application:
+    # Data ID: nacos-dev.yml
+    name: nacos-provide
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        prefix: ${spring.application.name}
+        file-extension: yml
+        group: gtk
+    # 熔断限流, 配置层级错误， 花了两小时排查
+    sentinel:
+      transport:
+        dashboard: localhost:8081
+      eager: true
+feign:
+  # 解决java.lang.NoSuchMethodError: feign.RequestTemplate.path()Ljava/lang/String;报错
+  #  hystrix:
+  #    enabled: false
+  sentinel:
+    enabled: true

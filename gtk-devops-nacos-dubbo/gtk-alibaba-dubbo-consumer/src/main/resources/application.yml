@@ -1,0 +1,33 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: dubbo-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+server:
+  port: 10201
+
+dubbo:
+  application:
+    # 花了2小时解决。此处把-写成了_  报错：Caused by: java.lang.IllegalStateException: Invalid name="com.alibaba.dubbo.config.ApplicationConfig#0" contains illegal character, only digit, letter, '-', '_' or '.' is legal.
+    name: dubbo-consumer
+    qos-enable: false
+  registry:
+    address: nacos://127.0.0.1:8848
+  scan:
+    basePackages: com.gtk.dubbo.provider.service
+  protocol:
+    name: dubbo
+    port: -1
+    # 高速序列化 想要使用 Kryo 序列化只需要 DTO/Domain/Entity 这类传输对象实现序列化接口即可，
+    # 无需额外再做配置，如：public class User implements Serializable{}。 Dubbo 已经自动将 JDK 中的常用类进行了注册
+    serialization: kryo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
