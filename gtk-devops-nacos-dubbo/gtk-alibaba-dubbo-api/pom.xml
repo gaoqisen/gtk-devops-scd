@@ -14,7 +14,7 @@
     <packaging>jar</packaging>
 
     <name>gtk-alibaba-dubbo-api</name>
-    <inceptionYear>2018-Now</inceptionYear>
+    <inceptionYear>2019-Now</inceptionYear>
 
     <build>
         <plugins>
