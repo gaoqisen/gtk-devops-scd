@@ -1,0 +1,31 @@
+server:
+  port: 7002
+spring:
+  profiles:
+    active: dev
+  application:
+    # Data ID: nacos-dev.yml
+    name: nacos-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    # 熔断限流
+    sentinel:
+      transport:
+        dashboard: localhost:8081
+      eager: true
+management:
+  # 端点检查（健康检查）
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+# Sentinel 适配了 Feign 组件。但默认是关闭的。需要在配置文件中配置打开它
+feign:
+  # 解决java.lang.NoSuchMethodError: feign.RequestTemplate.path()Ljava/lang/String;报错
+#  hystrix:
+#    enabled: false
+  sentinel:
+    enabled: true
+

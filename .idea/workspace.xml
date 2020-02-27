@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cfa5faa1-cf4c-4b42-8916-235f9a3d669d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data/GDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data/GString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data/Verify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/db/JdbcTemplateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/net/Download.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GAes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GDes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GMd5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/controller.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/input.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/mysql-connector-java-5.1.34.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/ojdbc6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/service-impl.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/service.ftl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/test/java/gtk/CodeGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/src/main/java/com/gtk/spring/shiro/ShiroApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/src/main/java/com/gtk/spring/shiro/config/MyShiroRelam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/src/main/java/com/gtk/spring/shiro/config/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-webapi/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-webapi/src/main/java/com/gtk/webapi/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-webapi/src/main/java/com/gtk/webapi/utils/JsonResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-devops-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-dependencies/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-devops-generate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-generate/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/mapper/AdminUserMapper.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gqs_0: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gqs_1: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gqs_1: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="gqs_1: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="admin_user_1: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="oauth: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="oauth: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="oauth_client_details: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="oauth: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tb_role_permission: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1WgRI5uTHiBaRbPb9USPZa8Rt0m" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.data.extractors.current.id" value="SQL Inserts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gtk-devops-generate/src/test/java" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.gtk.spring.security.oauth2.server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gtk-devops-generate/src/test/java" />
+      <recent name="$PROJECT_DIR$/gtk-devops-generate/src/main/resources" />
+      <recent name="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe" />
+      <recent name="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data" />
+      <recent name="$PROJECT_DIR$/gtk-external-skywalking" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gtk.common.safe" />
+      <recent name="com.gtk.common.net" />
+      <recent name="com.gtk.common.db" />
+      <recent name="com.gtk.webapi.utils" />
+      <recent name="com.gtk.webapi.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-server/src/main/resources/templates" />
+      <recent name="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-server/src/main/resources/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CodeGenerator">
+    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gtk.CodeGenerator" />
+      <module name="gtk-devops-generate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gtk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OAuth2ResourceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.resource.OAuth2ResourceApplication" />
+      <module name="gtk-spring-security-oauth2-resource" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtk.spring.security.oauth2.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OAuth2ServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.server.OAuth2ServerApplication" />
+      <module name="gtk-spring-security-oauth2-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtk.spring.security.oauth2.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OAuth2ServerApplicationTests.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gtk-spring-security-oauth2-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtk.spring.security.oauth2.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gtk.spring.security.oauth2.server" />
+      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.server.OAuth2ServerApplicationTests" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OAuth2ServerApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gtk-spring-security-oauth2-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtk.spring.security.oauth2.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.gtk.spring.security.oauth2.server" />
+      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.server.OAuth2ServerApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="gtk-devops-dependencies" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="gtk-devops-dependencies" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.OAuth2ServerApplication" />
+      <item itemvalue="Application.OAuth2ResourceApplication" />
+      <item itemvalue="JUnit.OAuth2ServerApplicationTests.test" />
+      <item itemvalue="JUnit.OAuth2ServerApplicationTests.main" />
+      <item itemvalue="Application.CodeGenerator" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CodeGenerator" />
+        <item itemvalue="JUnit.OAuth2ServerApplicationTests.test" />
+        <item itemvalue="JUnit.OAuth2ServerApplicationTests.main" />
+        <item itemvalue="Application.OAuth2ServerApplication" />
+        <item itemvalue="Application.OAuth2ResourceApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cfa5faa1-cf4c-4b42-8916-235f9a3d669d" name="Default Changelist" comment="" />
+      <created>1579569168522</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579569168522</updated>
+      <workItem from="1579569171535" duration="974000" />
+      <workItem from="1579571163437" duration="5672000" />
+      <workItem from="1580268353063" duration="8038000" />
+      <workItem from="1580559143107" duration="1117000" />
+      <workItem from="1580560343896" duration="18000" />
+      <workItem from="1580560367877" duration="718000" />
+      <workItem from="1580561093973" duration="11647000" />
+      <workItem from="1580642385923" duration="6512000" />
+      <workItem from="1580652238049" duration="23617000" />
+      <workItem from="1580779345497" duration="10877000" />
+      <workItem from="1580890298733" duration="9267000" />
+      <workItem from="1580906043789" duration="655000" />
+      <workItem from="1580956359256" duration="5359000" />
+      <workItem from="1581160914917" duration="4229000" />
+      <workItem from="1581387495746" duration="3820000" />
+      <workItem from="1582074728840" duration="6266000" />
+      <workItem from="1582165558875" duration="3978000" />
+      <workItem from="1582441770544" duration="888000" />
+      <workItem from="1582640227908" duration="6967000" />
+      <workItem from="1582789133021" duration="2230000" />
+      <workItem from="1582791616355" duration="1547000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="283" y="49" key="#Inspections" timestamp="1580559755027">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="283" y="49" key="#Inspections/0.0.1366.764@0.0.1366.764" timestamp="1580559755027" />
+    <state x="367" y="87" key="#NacosApplication" timestamp="1580560583026">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="367" y="87" key="#NacosApplication/0.0.1366.764@0.0.1366.764" timestamp="1580560583026" />
+    <state x="283" y="49" key="#Project_Structure" timestamp="1582685740337">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="283" y="49" key="#Project_Structure/0.0.1366.764@0.0.1366.764" timestamp="1582685740337" />
+    <state x="283" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580710103461">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="283" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.764@0.0.1366.764" timestamp="1580710103461" />
+    <state x="391" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580896156589">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="391" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.764@0.0.1366.764" timestamp="1580896156589" />
+    <state x="496" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1581161725133">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="496" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.764@0.0.1366.764" timestamp="1581161725133" />
+    <state x="420" y="175" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580899212485">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="420" y="175" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.764@0.0.1366.764" timestamp="1580899212485" />
+    <state x="0" y="316" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1580898549761">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="0" y="316" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.764@0.0.1366.764" timestamp="1580898549761" />
+    <state x="180" y="250" width="1006" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580896199985">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="180" y="250" width="1006" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.764@0.0.1366.764" timestamp="1580896199985" />
+    <state x="180" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1580898554499">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="180" y="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.764@0.0.1366.764" timestamp="1580898554499" />
+    <state x="421" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580728942501">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="421" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.764@0.0.1366.764" timestamp="1580728942501" />
+    <state width="477" height="466" key="DebuggerActiveHint" timestamp="1580899884733">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="477" height="466" key="DebuggerActiveHint/0.0.1366.764@0.0.1366.764" timestamp="1580899884733" />
+    <state width="662" height="201" key="GridCell.Tab.0.bottom" timestamp="1582793477589">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="201" key="GridCell.Tab.0.bottom/0.0.1366.764@0.0.1366.764" timestamp="1582793477589" />
+    <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729726" />
+    <state width="662" height="201" key="GridCell.Tab.0.bottom/0.23.1366.741@0.23.1366.741" timestamp="1582792750088" />
+    <state width="662" height="201" key="GridCell.Tab.0.center" timestamp="1582793477587">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="201" key="GridCell.Tab.0.center/0.0.1366.764@0.0.1366.764" timestamp="1582793477587" />
+    <state width="1878" height="375" key="GridCell.Tab.0.center/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729725" />
+    <state width="662" height="201" key="GridCell.Tab.0.center/0.23.1366.741@0.23.1366.741" timestamp="1582792750085" />
+    <state width="662" height="201" key="GridCell.Tab.0.left" timestamp="1582793477586">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="201" key="GridCell.Tab.0.left/0.0.1366.764@0.0.1366.764" timestamp="1582793477586" />
+    <state width="1878" height="375" key="GridCell.Tab.0.left/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729724" />
+    <state width="662" height="201" key="GridCell.Tab.0.left/0.23.1366.741@0.23.1366.741" timestamp="1582792750083" />
+    <state width="662" height="201" key="GridCell.Tab.0.right" timestamp="1582793477588">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="201" key="GridCell.Tab.0.right/0.0.1366.764@0.0.1366.764" timestamp="1582793477588" />
+    <state width="1878" height="375" key="GridCell.Tab.0.right/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729726" />
+    <state width="662" height="201" key="GridCell.Tab.0.right/0.23.1366.741@0.23.1366.741" timestamp="1582792750087" />
+    <state width="662" height="295" key="GridCell.Tab.1.bottom" timestamp="1582792420519">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="295" key="GridCell.Tab.1.bottom/0.0.1366.764@0.0.1366.764" timestamp="1582792420519" />
+    <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729730" />
+    <state width="1324" height="317" key="GridCell.Tab.1.bottom/0.23.1366.741@0.23.1366.741" timestamp="1580959960280" />
+    <state width="662" height="295" key="GridCell.Tab.1.center" timestamp="1582792420517">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="295" key="GridCell.Tab.1.center/0.0.1366.764@0.0.1366.764" timestamp="1582792420517" />
+    <state width="1878" height="375" key="GridCell.Tab.1.center/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729728" />
+    <state width="1324" height="317" key="GridCell.Tab.1.center/0.23.1366.741@0.23.1366.741" timestamp="1580959960278" />
+    <state width="662" height="295" key="GridCell.Tab.1.left" timestamp="1582792420516">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="295" key="GridCell.Tab.1.left/0.0.1366.764@0.0.1366.764" timestamp="1582792420516" />
+    <state width="1878" height="375" key="GridCell.Tab.1.left/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729727" />
+    <state width="1324" height="317" key="GridCell.Tab.1.left/0.23.1366.741@0.23.1366.741" timestamp="1580959960277" />
+    <state width="662" height="295" key="GridCell.Tab.1.right" timestamp="1582792420518">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="662" height="295" key="GridCell.Tab.1.right/0.0.1366.764@0.0.1366.764" timestamp="1582792420518" />
+    <state width="1878" height="375" key="GridCell.Tab.1.right/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729729" />
+    <state width="1324" height="317" key="GridCell.Tab.1.right/0.23.1366.741@0.23.1366.741" timestamp="1580959960279" />
+    <state x="221" y="46" key="Maven.ArtifactSearchDialog" timestamp="1582790671336">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="221" y="46" key="Maven.ArtifactSearchDialog/0.0.1366.764@0.0.1366.764" timestamp="1582790671336" />
+    <state x="312" y="85" key="NewModule_or_Project.wizard" timestamp="1582688741042">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="312" y="85" key="NewModule_or_Project.wizard/0.0.1366.764@0.0.1366.764" timestamp="1582688741042" />
+    <state x="64" y="14" key="SettingsEditor" timestamp="1582685728463">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="64" y="14" key="SettingsEditor/0.0.1366.764@0.0.1366.764" timestamp="1582685728463" />
+    <state x="469" y="179" key="SettingsEditor/0.0.1920.1076/-1366.144.1366.768@0.0.1920.1076" timestamp="1579569997908" />
+    <state x="585" y="278" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1580898193780">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="585" y="278" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1366.764@0.0.1366.764" timestamp="1580898193780" />
+    <state x="457" y="214" width="451" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1580722223054">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="457" y="214" width="451" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.764@0.0.1366.764" timestamp="1580722223054" />
+    <state x="549" y="129" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1580895988529">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="549" y="129" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.764@0.0.1366.764" timestamp="1580895988529" />
+    <state x="362" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1582791617406">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="362" y="216" key="com.intellij.ide.util.TipDialog/0.0.1366.764@0.0.1366.764" timestamp="1582791617406" />
+    <state x="362" y="232" key="com.intellij.ide.util.TipDialog/0.23.1366.741@0.23.1366.741" timestamp="1582641101530" />
+    <state x="478" y="80" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580956945480">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="478" y="80" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.764@0.0.1366.764" timestamp="1580956945480" />
+    <state x="349" y="141" width="816" height="550" key="find.popup" timestamp="1580819800669">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="349" y="141" width="816" height="550" key="find.popup/0.0.1366.764@0.0.1366.764" timestamp="1580819800669" />
+    <state x="154" y="159" key="new project wizard" timestamp="1580890474914">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="154" y="159" key="new project wizard/0.0.1366.764@0.0.1366.764" timestamp="1580890474914" />
+    <state x="354" y="237" key="new project wizard/0.0.1920.1076/-1366.144.1366.768@0.0.1920.1076" timestamp="1579569240444" />
+    <state x="154" y="159" key="new project wizard/0.23.1366.741@0.23.1366.741" timestamp="1580622921018" />
+    <state x="348" y="177" key="run.anything.popup" timestamp="1580780507397">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="348" y="177" key="run.anything.popup/0.0.1366.764@0.0.1366.764" timestamp="1580780507397" />
+    <state x="348" y="88" width="670" height="676" key="search.everywhere.popup" timestamp="1580896467432">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="348" y="88" width="670" height="676" key="search.everywhere.popup/0.0.1366.764@0.0.1366.764" timestamp="1580896467432" />
+  </component>
+</project>

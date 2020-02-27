@@ -1,0 +1,3 @@
+com/gtk/rocketmq/provider/service/ProviderService.class
+com/gtk/rocketmq/provider/controller/ProviderController.class
+com/gtk/rocketmq/provider/RocketMQProviderApplication.class

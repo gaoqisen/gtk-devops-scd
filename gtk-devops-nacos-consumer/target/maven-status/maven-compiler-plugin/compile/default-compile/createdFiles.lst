@@ -1,0 +1,6 @@
+com/gtk/consumer/config/NacosConsumerConfiguration.class
+com/gtk/consumer/NacosConsumerApplication.class
+com/gtk/consumer/controller/FeignController.class
+com/gtk/consumer/service/FeignService.class
+com/gtk/consumer/controller/RestTemplateController.class
+com/gtk/consumer/service/FeignServiceFallback.class

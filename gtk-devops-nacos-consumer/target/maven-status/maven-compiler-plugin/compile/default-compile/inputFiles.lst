@@ -1,0 +1,6 @@
+/Users/jasongao/Documents/workspace/gtk-devops-scd/gtk-devops-nacos-consumer/src/main/java/com/gtk/consumer/controller/RestTemplateController.java
+/Users/jasongao/Documents/workspace/gtk-devops-scd/gtk-devops-nacos-consumer/src/main/java/com/gtk/consumer/NacosConsumerApplication.java
+/Users/jasongao/Documents/workspace/gtk-devops-scd/gtk-devops-nacos-consumer/src/main/java/com/gtk/consumer/service/FeignService.java
+/Users/jasongao/Documents/workspace/gtk-devops-scd/gtk-devops-nacos-consumer/src/main/java/com/gtk/consumer/config/NacosConsumerConfiguration.java
+/Users/jasongao/Documents/workspace/gtk-devops-scd/gtk-devops-nacos-consumer/src/main/java/com/gtk/consumer/controller/FeignController.java
+/Users/jasongao/Documents/workspace/gtk-devops-scd/gtk-devops-nacos-consumer/src/main/java/com/gtk/consumer/service/FeignServiceFallback.java

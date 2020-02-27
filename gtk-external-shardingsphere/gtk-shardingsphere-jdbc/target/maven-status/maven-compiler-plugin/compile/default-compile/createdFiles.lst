@@ -1,0 +1,3 @@
+com/gtk/shardingsphere/domain/AdminUser.class
+com/gtk/shardingsphere/ShardingsphereApplication.class
+com/gtk/shardingsphere/mapper/AdminUserMapper.class

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-generate/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-provide/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-dubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-dubbo/gtk-alibaba-dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-dubbo/gtk-alibaba-dubbo-provide/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-dubbo/gtk-alibaba-dubbo-api/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-dubbo/gtk-alibaba-dubbo-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-external-rocketmq/gtk-rocketmq-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-external-rocketmq/gtk-rocketmq-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-external-shardingsphere/gtk-shardingsphere-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-nacos-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-external-leaf/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-server/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-resource/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-external-kettle/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-webapi/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-common/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
