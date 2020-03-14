@@ -29,6 +29,9 @@
         <option value="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/pom.xml" />
         <option value="$PROJECT_DIR$/gtk-devops-webapi/pom.xml" />
         <option value="$PROJECT_DIR$/gtk-devops-common/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-external-elasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-vue/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-external-rabbitmq/pom.xml" />
       </list>
     </option>
   </component>

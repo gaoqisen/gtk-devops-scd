@@ -12,7 +12,7 @@ import javax.crypto.spec.IvParameterSpec;
  * @Date 2019-12-01
  * @Version 1.0
  */
-public class GDes {
+public class DESUtils {
 
     /**
      * @Author gaoqisen

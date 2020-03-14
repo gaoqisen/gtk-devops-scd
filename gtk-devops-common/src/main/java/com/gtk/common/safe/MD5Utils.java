@@ -8,7 +8,7 @@ import java.security.MessageDigest;
  * @Date 2019-12-01
  * @Version 1.0
  */
-public class GMd5 {
+public class MD5Utils {
 
     /**
      * @Author gaoqisen

@@ -2,33 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfa5faa1-cf4c-4b42-8916-235f9a3d669d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data/GDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data/GString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data/Verify.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/db/JdbcTemplateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/net/Download.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GAes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GDes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GMd5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/controller.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/input.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/mysql-connector-java-5.1.34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/ojdbc6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/service-impl.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/generator.template/service.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-generate/src/test/java/gtk/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/src/main/java/com/gtk/spring/shiro/ShiroApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/src/main/java/com/gtk/spring/shiro/config/MyShiroRelam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-shiro-oauth2/src/main/java/com/gtk/spring/shiro/config/ShiroConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-webapi/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-webapi/src/main/java/com/gtk/webapi/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtk-devops-webapi/src/main/java/com/gtk/webapi/utils/JsonResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gtk-devops-dependencies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-dependencies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gtk-devops-generate/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-generate/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gtk-devops-generate/src/main/resources/mapper/AdminUserMapper.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/config/ScheduledConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/config/ScheduledOfTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/config/TransactionManagerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/RSAUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/java/com/gtk/vue/VueApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/.postcssrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/check-versions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/vue-loader.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/webpack.base.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/webpack.dev.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/build/webpack.prod.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/config/dev.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/config/prod.env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/src/components/HelloWorld.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage/static/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/src/main/java/com/gtk/elasticsearch/ElasticsearchApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/src/main/java/com/gtk/elasticsearch/controller/ContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/src/main/java/com/gtk/elasticsearch/entity/Content.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/src/main/java/com/gtk/elasticsearch/repository/ContentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/src/main/java/com/gtk/elasticsearch/service/ContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/src/main/java/com/gtk/elasticsearch/service/impl/ContentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-elasticsearch/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/RabbitmqApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/config/FanOutConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/config/RabbitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/config/TopicExchangeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/controller/FanOutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/controller/TopicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/FanoutReceiver1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/FanoutReceiver2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/FanoutReceiver3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/FanoutSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/MessageReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/MessageSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/TopicReceiver1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/TopicReceiver2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/java/com/gtk/rabbitmq/message/TopicSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gtk-external-rabbitmq/src/test/java/com/gtk/rabbitmq/RabbitmqdemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f39f87cb-b743-4b8b-b3cb-6d3fe9678d56.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f39f87cb-b743-4b8b-b3cb-6d3fe9678d56.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-devops-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GAes.java" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/AESUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GDes.java" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/DESUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/GMd5.java" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe/MD5Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-external-kettle/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-external-kettle/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtk-external-kettle/src/main/java/com/gtk/kettle/KettleApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gtk-external-kettle/src/main/java/com/gtk/kettle/KettleApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,42 +108,8 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gqs_1: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gqs_1: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="gqs_0: schema" type="76f4a085:MysqlImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="gqs_1: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="admin_user_1: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="oauth: schema" type="76f4a085:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="oauth: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="oauth_client_details: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="oauth: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="tb_role_permission: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -142,19 +150,25 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gtk-devops-generate/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.32873562" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
@@ -162,32 +176,33 @@
       <recent name="com.gtk.spring.security.oauth2.server" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/gtk-devops-vue/src/main/resources/webpage" />
+      <recent name="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/config" />
       <recent name="$PROJECT_DIR$/gtk-devops-generate/src/test/java" />
       <recent name="$PROJECT_DIR$/gtk-devops-generate/src/main/resources" />
-      <recent name="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/safe" />
-      <recent name="$PROJECT_DIR$/gtk-devops-common/src/main/java/com/gtk/common/data" />
-      <recent name="$PROJECT_DIR$/gtk-external-skywalking" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gtk.rabbitmq.controller" />
+      <recent name="com.gtk.rabbitmq.message" />
       <recent name="com.gtk.common.safe" />
       <recent name="com.gtk.common.net" />
       <recent name="com.gtk.common.db" />
-      <recent name="com.gtk.webapi.utils" />
-      <recent name="com.gtk.webapi.config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gtk-devops-vue/src/main/resources" />
       <recent name="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-server/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-server/src/main/resources" />
       <recent name="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-server/src/main/resources/resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CodeGenerator">
-    <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gtk.CodeGenerator" />
-      <module name="gtk-devops-generate" />
+  <component name="RunManager" selected="Application.VueApplication">
+    <configuration name="RSAUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gtk.common.safe.RSAUtils" />
+      <module name="gtk-devops-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gtk.*" />
+          <option name="PATTERN" value="com.gtk.common.safe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,12 +210,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OAuth2ResourceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.resource.OAuth2ResourceApplication" />
-      <module name="gtk-spring-security-oauth2-resource" />
+    <configuration name="VueApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gtk.vue.VueApplication" />
+      <module name="gtk-devops-vue" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gtk.spring.security.oauth2.resource.*" />
+          <option name="PATTERN" value="com.gtk.vue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,46 +223,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OAuth2ServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.server.OAuth2ServerApplication" />
-      <module name="gtk-spring-security-oauth2-server" />
+    <configuration name="RabbitmqdemoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gtk-devops-rabbitmq" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gtk.spring.security.oauth2.server.*" />
+          <option name="PATTERN" value="com.gtk.rabbitmq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OAuth2ServerApplicationTests.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gtk-spring-security-oauth2-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gtk.spring.security.oauth2.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.gtk.spring.security.oauth2.server" />
-      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.server.OAuth2ServerApplicationTests" />
-      <option name="METHOD_NAME" value="main" />
+      <option name="PACKAGE_NAME" value="com.gtk.rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.gtk.rabbitmq.RabbitmqdemoApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OAuth2ServerApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="gtk-spring-security-oauth2-server" />
+    <configuration name="RabbitmqdemoApplicationTests.topic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gtk-devops-rabbitmq" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.gtk.spring.security.oauth2.server.*" />
+          <option name="PATTERN" value="com.gtk.rabbitmq.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.gtk.spring.security.oauth2.server" />
-      <option name="MAIN_CLASS_NAME" value="com.gtk.spring.security.oauth2.server.OAuth2ServerApplicationTests" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.gtk.rabbitmq" />
+      <option name="MAIN_CLASS_NAME" value="com.gtk.rabbitmq.RabbitmqdemoApplicationTests" />
+      <option name="METHOD_NAME" value="topic" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -300,20 +302,89 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DubboConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gtk-devops-nacos-dubbo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.nacos.dubbo.DubboConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DubboProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ggtk-alibaba-dubbo-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.dubbo.provider.DubboProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gtk-devops-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gtk-devops-nacos-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.consumer.NacosConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosProvideApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gtk-devops-nacos-provide" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.nacos.NacosProvideApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OAuth2ResourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gtk-spring-security-oauth2-resource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.spring.security.oauth2.resource.OAuth2ResourceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OAuth2ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gtk-spring-security-oauth2-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.spring.security.oauth2.server.OAuth2ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gtk-devops-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gtk.rabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gtk.rabbitmq.RabbitmqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.OAuth2ServerApplication" />
-      <item itemvalue="Application.OAuth2ResourceApplication" />
-      <item itemvalue="JUnit.OAuth2ServerApplicationTests.test" />
-      <item itemvalue="JUnit.OAuth2ServerApplicationTests.main" />
-      <item itemvalue="Application.CodeGenerator" />
+      <item itemvalue="Application.RSAUtils" />
+      <item itemvalue="Application.VueApplication" />
+      <item itemvalue="JUnit.RabbitmqdemoApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.RabbitmqdemoApplicationTests.topic" />
+      <item itemvalue="Spring Boot.OAuth2ServerApplication" />
+      <item itemvalue="Spring Boot.DubboProviderApplication" />
+      <item itemvalue="Spring Boot.NacosConsumerApplication" />
+      <item itemvalue="Spring Boot.NacosProvideApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.DubboConsumerApplication" />
+      <item itemvalue="Spring Boot.OAuth2ResourceApplication" />
+      <item itemvalue="Spring Boot.RabbitmqApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CodeGenerator" />
-        <item itemvalue="JUnit.OAuth2ServerApplicationTests.test" />
-        <item itemvalue="JUnit.OAuth2ServerApplicationTests.main" />
-        <item itemvalue="Application.OAuth2ServerApplication" />
-        <item itemvalue="Application.OAuth2ResourceApplication" />
+        <item itemvalue="Application.VueApplication" />
+        <item itemvalue="Spring Boot.RabbitmqApplication" />
+        <item itemvalue="JUnit.RabbitmqdemoApplicationTests.topic" />
+        <item itemvalue="JUnit.RabbitmqdemoApplicationTests.contextLoads" />
+        <item itemvalue="Application.RSAUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +433,21 @@
       <workItem from="1582441770544" duration="888000" />
       <workItem from="1582640227908" duration="6967000" />
       <workItem from="1582789133021" duration="2230000" />
-      <workItem from="1582791616355" duration="1547000" />
+      <workItem from="1582791616355" duration="8843000" />
+      <workItem from="1582893500232" duration="2565000" />
+      <workItem from="1582941190207" duration="1633000" />
+      <workItem from="1583398810873" duration="3288000" />
+      <workItem from="1583412894708" duration="3750000" />
+      <workItem from="1583464163355" duration="7663000" />
+      <workItem from="1583640791975" duration="11821000" />
+      <workItem from="1583664481099" duration="256000" />
+      <workItem from="1583664785108" duration="3633000" />
+      <workItem from="1583719565288" duration="2025000" />
+      <workItem from="1583805564984" duration="8145000" />
+      <workItem from="1583896192833" duration="2671000" />
+      <workItem from="1583900338260" duration="4257000" />
+      <workItem from="1584064830109" duration="1740000" />
+      <workItem from="1584113810891" duration="782000" />
     </task>
     <servers />
   </component>
@@ -389,14 +474,14 @@
       <screen x="0" y="0" width="1366" height="764" />
     </state>
     <state x="283" y="49" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.764@0.0.1366.764" timestamp="1580710103461" />
-    <state x="391" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580896156589">
+    <state x="391" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583806000749">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="391" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.764@0.0.1366.764" timestamp="1580896156589" />
-    <state x="496" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1581161725133">
+    <state x="391" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.764@0.0.1366.764" timestamp="1583806000749" />
+    <state x="496" y="100" key="#com.intellij.ide.util.MemberChooser" timestamp="1582941831145">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="496" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.764@0.0.1366.764" timestamp="1581161725133" />
+    <state x="496" y="100" key="#com.intellij.ide.util.MemberChooser/0.0.1366.764@0.0.1366.764" timestamp="1582941831145" />
     <state x="420" y="175" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580899212485">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
@@ -417,70 +502,98 @@
       <screen x="0" y="0" width="1366" height="764" />
     </state>
     <state x="421" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.764@0.0.1366.764" timestamp="1580728942501" />
-    <state width="477" height="466" key="DebuggerActiveHint" timestamp="1580899884733">
+    <state x="0" y="0" key="CommitChangelistDialog2" timestamp="1582793628605">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="477" height="466" key="DebuggerActiveHint/0.0.1366.764@0.0.1366.764" timestamp="1580899884733" />
-    <state width="662" height="201" key="GridCell.Tab.0.bottom" timestamp="1582793477589">
+    <state x="0" y="0" key="CommitChangelistDialog2/0.0.1366.764@0.0.1366.764" timestamp="1582793628605" />
+    <state width="477" height="466" key="DebuggerActiveHint" timestamp="1582941900395">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="201" key="GridCell.Tab.0.bottom/0.0.1366.764@0.0.1366.764" timestamp="1582793477589" />
+    <state width="477" height="466" key="DebuggerActiveHint/0.0.1366.764@0.0.1366.764" timestamp="1582941900395" />
+    <state width="872" height="100" key="GridCell.Tab.0.bottom" timestamp="1583917188553">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="872" height="100" key="GridCell.Tab.0.bottom/0.0.1366.764@0.0.1366.764" timestamp="1583917188553" />
     <state width="1878" height="375" key="GridCell.Tab.0.bottom/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729726" />
-    <state width="662" height="201" key="GridCell.Tab.0.bottom/0.23.1366.741@0.23.1366.741" timestamp="1582792750088" />
-    <state width="662" height="201" key="GridCell.Tab.0.center" timestamp="1582793477587">
+    <state width="1324" height="260" key="GridCell.Tab.0.bottom/0.23.1366.741@0.23.1366.741" timestamp="1583809041631" />
+    <state width="872" height="100" key="GridCell.Tab.0.center" timestamp="1583917188552">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="201" key="GridCell.Tab.0.center/0.0.1366.764@0.0.1366.764" timestamp="1582793477587" />
+    <state width="872" height="100" key="GridCell.Tab.0.center/0.0.1366.764@0.0.1366.764" timestamp="1583917188552" />
     <state width="1878" height="375" key="GridCell.Tab.0.center/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729725" />
-    <state width="662" height="201" key="GridCell.Tab.0.center/0.23.1366.741@0.23.1366.741" timestamp="1582792750085" />
-    <state width="662" height="201" key="GridCell.Tab.0.left" timestamp="1582793477586">
+    <state width="1324" height="260" key="GridCell.Tab.0.center/0.23.1366.741@0.23.1366.741" timestamp="1583809041620" />
+    <state width="872" height="100" key="GridCell.Tab.0.left" timestamp="1583917188551">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="201" key="GridCell.Tab.0.left/0.0.1366.764@0.0.1366.764" timestamp="1582793477586" />
+    <state width="872" height="100" key="GridCell.Tab.0.left/0.0.1366.764@0.0.1366.764" timestamp="1583917188551" />
     <state width="1878" height="375" key="GridCell.Tab.0.left/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729724" />
-    <state width="662" height="201" key="GridCell.Tab.0.left/0.23.1366.741@0.23.1366.741" timestamp="1582792750083" />
-    <state width="662" height="201" key="GridCell.Tab.0.right" timestamp="1582793477588">
+    <state width="1324" height="260" key="GridCell.Tab.0.left/0.23.1366.741@0.23.1366.741" timestamp="1583809041617" />
+    <state width="872" height="100" key="GridCell.Tab.0.right" timestamp="1583917188552">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="201" key="GridCell.Tab.0.right/0.0.1366.764@0.0.1366.764" timestamp="1582793477588" />
+    <state width="872" height="100" key="GridCell.Tab.0.right/0.0.1366.764@0.0.1366.764" timestamp="1583917188552" />
     <state width="1878" height="375" key="GridCell.Tab.0.right/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729726" />
-    <state width="662" height="201" key="GridCell.Tab.0.right/0.23.1366.741@0.23.1366.741" timestamp="1582792750087" />
-    <state width="662" height="295" key="GridCell.Tab.1.bottom" timestamp="1582792420519">
+    <state width="1324" height="260" key="GridCell.Tab.0.right/0.23.1366.741@0.23.1366.741" timestamp="1583809041626" />
+    <state width="872" height="100" key="GridCell.Tab.1.bottom" timestamp="1583917188555">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="295" key="GridCell.Tab.1.bottom/0.0.1366.764@0.0.1366.764" timestamp="1582792420519" />
+    <state width="872" height="100" key="GridCell.Tab.1.bottom/0.0.1366.764@0.0.1366.764" timestamp="1583917188555" />
     <state width="1878" height="375" key="GridCell.Tab.1.bottom/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729730" />
-    <state width="1324" height="317" key="GridCell.Tab.1.bottom/0.23.1366.741@0.23.1366.741" timestamp="1580959960280" />
-    <state width="662" height="295" key="GridCell.Tab.1.center" timestamp="1582792420517">
+    <state width="1324" height="260" key="GridCell.Tab.1.bottom/0.23.1366.741@0.23.1366.741" timestamp="1583809041636" />
+    <state width="872" height="100" key="GridCell.Tab.1.center" timestamp="1583917188554">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="295" key="GridCell.Tab.1.center/0.0.1366.764@0.0.1366.764" timestamp="1582792420517" />
+    <state width="872" height="100" key="GridCell.Tab.1.center/0.0.1366.764@0.0.1366.764" timestamp="1583917188554" />
     <state width="1878" height="375" key="GridCell.Tab.1.center/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729728" />
-    <state width="1324" height="317" key="GridCell.Tab.1.center/0.23.1366.741@0.23.1366.741" timestamp="1580959960278" />
-    <state width="662" height="295" key="GridCell.Tab.1.left" timestamp="1582792420516">
+    <state width="1324" height="260" key="GridCell.Tab.1.center/0.23.1366.741@0.23.1366.741" timestamp="1583809041633" />
+    <state width="872" height="100" key="GridCell.Tab.1.left" timestamp="1583917188553">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="295" key="GridCell.Tab.1.left/0.0.1366.764@0.0.1366.764" timestamp="1582792420516" />
+    <state width="872" height="100" key="GridCell.Tab.1.left/0.0.1366.764@0.0.1366.764" timestamp="1583917188553" />
     <state width="1878" height="375" key="GridCell.Tab.1.left/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729727" />
-    <state width="1324" height="317" key="GridCell.Tab.1.left/0.23.1366.741@0.23.1366.741" timestamp="1580959960277" />
-    <state width="662" height="295" key="GridCell.Tab.1.right" timestamp="1582792420518">
+    <state width="1324" height="260" key="GridCell.Tab.1.left/0.23.1366.741@0.23.1366.741" timestamp="1583809041632" />
+    <state width="872" height="100" key="GridCell.Tab.1.right" timestamp="1583917188554">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state width="662" height="295" key="GridCell.Tab.1.right/0.0.1366.764@0.0.1366.764" timestamp="1582792420518" />
+    <state width="872" height="100" key="GridCell.Tab.1.right/0.0.1366.764@0.0.1366.764" timestamp="1583917188554" />
     <state width="1878" height="375" key="GridCell.Tab.1.right/0.0.1920.1076@0.0.1920.1076" timestamp="1579600729729" />
-    <state width="1324" height="317" key="GridCell.Tab.1.right/0.23.1366.741@0.23.1366.741" timestamp="1580959960279" />
-    <state x="221" y="46" key="Maven.ArtifactSearchDialog" timestamp="1582790671336">
+    <state width="1324" height="260" key="GridCell.Tab.1.right/0.23.1366.741@0.23.1366.741" timestamp="1583809041634" />
+    <state width="1324" height="2" key="GridCell.Tab.2.bottom" timestamp="1583843060921">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="221" y="46" key="Maven.ArtifactSearchDialog/0.0.1366.764@0.0.1366.764" timestamp="1582790671336" />
+    <state width="1324" height="2" key="GridCell.Tab.2.bottom/0.0.1366.764@0.0.1366.764" timestamp="1583843060921" />
+    <state width="1324" height="260" key="GridCell.Tab.2.bottom/0.23.1366.741@0.23.1366.741" timestamp="1583809041640" />
+    <state width="1324" height="2" key="GridCell.Tab.2.center" timestamp="1583843060916">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="1324" height="2" key="GridCell.Tab.2.center/0.0.1366.764@0.0.1366.764" timestamp="1583843060916" />
+    <state width="1324" height="260" key="GridCell.Tab.2.center/0.23.1366.741@0.23.1366.741" timestamp="1583809041638" />
+    <state width="1324" height="2" key="GridCell.Tab.2.left" timestamp="1583843060913">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="1324" height="2" key="GridCell.Tab.2.left/0.0.1366.764@0.0.1366.764" timestamp="1583843060913" />
+    <state width="1324" height="260" key="GridCell.Tab.2.left/0.23.1366.741@0.23.1366.741" timestamp="1583809041637" />
+    <state width="1324" height="2" key="GridCell.Tab.2.right" timestamp="1583843060919">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state width="1324" height="2" key="GridCell.Tab.2.right/0.0.1366.764@0.0.1366.764" timestamp="1583843060919" />
+    <state width="1324" height="260" key="GridCell.Tab.2.right/0.23.1366.741@0.23.1366.741" timestamp="1583809041639" />
+    <state x="271" y="126" key="IDE.errors.dialog" timestamp="1582794122832">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="271" y="126" key="IDE.errors.dialog/0.0.1366.764@0.0.1366.764" timestamp="1582794122832" />
+    <state x="221" y="46" key="Maven.ArtifactSearchDialog" timestamp="1583806471236">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="221" y="46" key="Maven.ArtifactSearchDialog/0.0.1366.764@0.0.1366.764" timestamp="1583806471236" />
     <state x="312" y="85" key="NewModule_or_Project.wizard" timestamp="1582688741042">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
     <state x="312" y="85" key="NewModule_or_Project.wizard/0.0.1366.764@0.0.1366.764" timestamp="1582688741042" />
-    <state x="64" y="14" key="SettingsEditor" timestamp="1582685728463">
+    <state x="64" y="0" key="SettingsEditor" timestamp="1584114017231">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="64" y="14" key="SettingsEditor/0.0.1366.764@0.0.1366.764" timestamp="1582685728463" />
+    <state x="64" y="0" key="SettingsEditor/0.0.1366.764@0.0.1366.764" timestamp="1584114017231" />
     <state x="469" y="179" key="SettingsEditor/0.0.1920.1076/-1366.144.1366.768@0.0.1920.1076" timestamp="1579569997908" />
     <state x="585" y="278" width="342" height="223" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1580898193780">
       <screen x="0" y="0" width="1366" height="764" />
@@ -490,36 +603,40 @@
       <screen x="0" y="0" width="1366" height="764" />
     </state>
     <state x="457" y="214" width="451" height="335" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1366.764@0.0.1366.764" timestamp="1580722223054" />
-    <state x="549" y="129" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1580895988529">
+    <state x="549" y="129" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1582856179049">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="549" y="129" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.764@0.0.1366.764" timestamp="1580895988529" />
-    <state x="362" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1582791617406">
+    <state x="549" y="129" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1366.764@0.0.1366.764" timestamp="1582856179049" />
+    <state x="362" y="216" key="com.intellij.ide.util.TipDialog" timestamp="1584113824309">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="362" y="216" key="com.intellij.ide.util.TipDialog/0.0.1366.764@0.0.1366.764" timestamp="1582791617406" />
+    <state x="362" y="216" key="com.intellij.ide.util.TipDialog/0.0.1366.764@0.0.1366.764" timestamp="1584113824309" />
     <state x="362" y="232" key="com.intellij.ide.util.TipDialog/0.23.1366.741@0.23.1366.741" timestamp="1582641101530" />
-    <state x="478" y="80" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580956945480">
+    <state x="478" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582809124969">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="478" y="80" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.764@0.0.1366.764" timestamp="1580956945480" />
-    <state x="349" y="141" width="816" height="550" key="find.popup" timestamp="1580819800669">
+    <state x="478" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.764@0.0.1366.764" timestamp="1582809124969" />
+    <state x="326" y="141" width="1040" height="550" key="find.popup" timestamp="1583898842923">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="349" y="141" width="816" height="550" key="find.popup/0.0.1366.764@0.0.1366.764" timestamp="1580819800669" />
+    <state x="326" y="141" width="1040" height="550" key="find.popup/0.0.1366.764@0.0.1366.764" timestamp="1583898842923" />
     <state x="154" y="159" key="new project wizard" timestamp="1580890474914">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
     <state x="154" y="159" key="new project wizard/0.0.1366.764@0.0.1366.764" timestamp="1580890474914" />
     <state x="354" y="237" key="new project wizard/0.0.1920.1076/-1366.144.1366.768@0.0.1920.1076" timestamp="1579569240444" />
     <state x="154" y="159" key="new project wizard/0.23.1366.741@0.23.1366.741" timestamp="1580622921018" />
-    <state x="348" y="177" key="run.anything.popup" timestamp="1580780507397">
+    <state x="348" y="177" key="run.anything.popup" timestamp="1583399499175">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="348" y="177" key="run.anything.popup/0.0.1366.764@0.0.1366.764" timestamp="1580780507397" />
-    <state x="348" y="88" width="670" height="676" key="search.everywhere.popup" timestamp="1580896467432">
+    <state x="348" y="177" key="run.anything.popup/0.0.1366.764@0.0.1366.764" timestamp="1583399499175" />
+    <state x="348" y="88" width="670" height="676" key="search.everywhere.popup" timestamp="1582894466839">
       <screen x="0" y="0" width="1366" height="764" />
     </state>
-    <state x="348" y="88" width="670" height="676" key="search.everywhere.popup/0.0.1366.764@0.0.1366.764" timestamp="1580896467432" />
+    <state x="348" y="88" width="670" height="676" key="search.everywhere.popup/0.0.1366.764@0.0.1366.764" timestamp="1582894466839" />
+    <state x="413" y="303" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1583902598315">
+      <screen x="0" y="0" width="1366" height="764" />
+    </state>
+    <state x="413" y="303" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1366.764@0.0.1366.764" timestamp="1583902598315" />
   </component>
 </project>

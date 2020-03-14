@@ -16,7 +16,7 @@ import java.security.SecureRandom;
  * @Date 2019-12-01
  * @Version 1.0
  */
-public class GAes {
+public class AESUtils {
     /**
      * 加密
      * @Date 2019-12-01 16:51

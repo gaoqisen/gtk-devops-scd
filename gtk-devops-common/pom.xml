@@ -41,7 +41,10 @@
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
         <!-- Spring Boot End -->
-
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+        </dependency>
 
     </dependencies>
 
