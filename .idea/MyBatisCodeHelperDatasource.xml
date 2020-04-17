@@ -6,11 +6,11 @@
         <option name="addSerializeUid" value="true" />
         <option name="generateService" value="true" />
         <option name="generateServiceInterface" value="true" />
-        <option name="javaMapperPackage" value="com.gtk.spring.security.oauth2.resource.mapper" />
-        <option name="javaMapperPath" value="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-resource/src/main/java" />
-        <option name="javaModelPackage" value="com.gtk.spring.security.oauth2.resource.domain" />
-        <option name="javaModelPath" value="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-resource/src/main/java" />
-        <option name="lastDatabaseCrudChooseModuleName" value="gtk-spring-security-oauth2-resource" />
+        <option name="javaMapperPackage" value="com.gtk.bsp.dao" />
+        <option name="javaMapperPath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/java" />
+        <option name="javaModelPackage" value="com.gtk.bsp.entity" />
+        <option name="javaModelPath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/java" />
+        <option name="lastDatabaseCrudChooseModuleName" value="gtk-project-bsp" />
         <option name="lombokDataAnnotation" value="true" />
         <option name="lombokNoArgsConstructor" value="true" />
         <option name="modelAddToString" value="true" />
@@ -29,6 +29,22 @@
                   <option name="javaServicePath" value="$PROJECT_DIR$/gtk-devops-generate/src/main/java" />
                   <option name="xmlPackage" value="mapper" />
                   <option name="xmlPath" value="$PROJECT_DIR$/gtk-devops-generate/src/main/resources" />
+                </UserPackageAndPathInfoByModule>
+              </value>
+            </entry>
+            <entry key="gtk-project-bsp">
+              <value>
+                <UserPackageAndPathInfoByModule>
+                  <option name="javaMapperPackage" value="com.gtk.bsp.dao" />
+                  <option name="javaMapperPath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/java" />
+                  <option name="javaModelPacakge" value="com.gtk.bsp.entity" />
+                  <option name="javaModelPath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/java" />
+                  <option name="javaServiceInterfacePackage" value="com.gtk.bsp.service" />
+                  <option name="javaServiceInterfacePath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/java" />
+                  <option name="javaServicePackage" value="com.gtk.bsp.service.impl" />
+                  <option name="javaServicePath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/java" />
+                  <option name="xmlPackage" value="mapper" />
+                  <option name="xmlPath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/resources" />
                 </UserPackageAndPathInfoByModule>
               </value>
             </entry>
@@ -85,6 +101,28 @@
         <option name="mybatisPlusStaticField" value="false" />
         <option name="tableGenerateConfigs">
           <map>
+            <entry key="bsp:sys_code">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysCode" />
+                  <option name="moduleName" value="gtk-project-bsp" />
+                  <option name="sequenceColumn" value="" />
+                  <option name="sequenceId" value="" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
+            <entry key="bsp:sys_code_menu">
+              <value>
+                <TableGenerateConfig>
+                  <option name="generatedKey" value="id" />
+                  <option name="javaModelName" value="SysCodeMenu" />
+                  <option name="moduleName" value="gtk-project-bsp" />
+                  <option name="useActualColumnName" value="false" />
+                </TableGenerateConfig>
+              </value>
+            </entry>
             <entry key="gqs1:admin_user">
               <value>
                 <TableGenerateConfig>
@@ -170,9 +208,9 @@
             </entry>
           </map>
         </option>
-        <option name="useCommonMapper" value="true" />
+        <option name="userMybatisPlus" value="true" />
         <option name="xmlMapperPackage" value="mapper" />
-        <option name="xmlMapperPath" value="$PROJECT_DIR$/gtk-devops-openplatform/gtk-spring-security-oauth2/gtk-spring-security-oauth2-resource/src/main/resources" />
+        <option name="xmlMapperPath" value="$PROJECT_DIR$/gtk-project-bsp/src/main/resources" />
       </ProjectProfile>
     </option>
   </component>

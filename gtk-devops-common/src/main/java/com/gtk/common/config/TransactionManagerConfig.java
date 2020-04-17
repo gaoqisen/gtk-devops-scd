@@ -26,7 +26,7 @@ public class TransactionManagerConfig {
 	/*定义切点变量：拦截com.gtk..*.service..*包下所有类的所有方法,返回值类型任意的方法*/
 	private static final String AOP_POINTCUT_EXPRESSION="execution (* com.gtk..*.service..*.*(..))";
 	@Autowired
-	private PlatformTransactionManager transactionManager;
+	private PlatformTransactionManager platformTransactionManager;
 
 	/**
 	 * @author cuihaichen
@@ -70,7 +70,7 @@ public class TransactionManagerConfig {
 		txMap.put("find*", readOnlyRule);
 		txMap.put("select*",readOnlyRule);
 		source.setNameMap(txMap);
-		TransactionInterceptor txAdvice=new TransactionInterceptor(transactionManager, source);
+		TransactionInterceptor txAdvice=new TransactionInterceptor(platformTransactionManager, source);
 		return txAdvice;
 	}
 

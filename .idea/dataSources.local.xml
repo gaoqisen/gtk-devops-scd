@@ -16,6 +16,7 @@
             <name qname="gqs_0" />
             <name qname="gqs_1" />
             <name qname="oauth" />
+            <name qname="bsp" />
           </node>
         </introspection-scope>
       </schema-mapping>
