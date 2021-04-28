@@ -5,8 +5,6 @@ import org.springframework.util.StringUtils;
 import java.security.SecureRandom;
 
 /**
- * @ClassName GString
- 
  * @Date 2019-12-04
  * @Version 1.0
  */
@@ -14,23 +12,23 @@ public class GString {
 
     /**
      * *替代证件号中间值(通用)
-     * @Date 2019-12-04 09:26 
+     * @Date 2019-12-04 09:26
      * @Param [str]
      * @return String
      **/
     public static String getAsteriskInfo(String str) {
         int length = str.length();
         int le = length/3;
-        StringBuffer newchar = new StringBuffer();
+        StringBuilder newer = new StringBuilder();
         for (int i = 0; i < le; i++) {
-            newchar.append("*");
+            newer.append("*");
         }
         if(le>0){
-            str = str.substring(0, le) + newchar + str.substring(2*le);
+            str = str.substring(0, le) + newer + str.substring(2*le);
         }
         return str;
     }
-    
+
     /**
      * 校验是否是中文
      * @Date 2019-12-04 09:29 
@@ -66,9 +64,10 @@ public class GString {
                 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
                 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
         SecureRandom secRandom = new SecureRandom();
-        StringBuffer sRand = new StringBuffer();
+        StringBuilder sRand;
+        sRand = new StringBuilder();
         for (int i = 0; i < length; ++i) {
-            Integer randomInt = Integer.valueOf(secRandom.nextInt(CHARS.length));
+            int randomInt = secRandom.nextInt(CHARS.length);
             String rand = String.valueOf(CHARS[randomInt]);
             sRand.append(rand);
         }
@@ -84,9 +83,9 @@ public class GString {
     public static String randomNumString(int length) {
         char[] CHARS = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
         SecureRandom secRandom = new SecureRandom();
-        StringBuffer sRand = new StringBuffer();
+        StringBuilder sRand = new StringBuilder();
         for (int i = 0; i < length; ++i) {
-            Integer randomInt = Integer.valueOf(secRandom.nextInt(CHARS.length));
+            int randomInt = secRandom.nextInt(CHARS.length);
             String rand = String.valueOf(CHARS[randomInt]);
             sRand.append(rand);
         }
@@ -103,9 +102,9 @@ public class GString {
         char[] CHARS = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
                 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
         SecureRandom secRandom = new SecureRandom();
-        StringBuffer sRand = new StringBuffer();
+        StringBuilder sRand = new StringBuilder();
         for (int i = 0; i < length; ++i) {
-            Integer randomInt = Integer.valueOf(secRandom.nextInt(CHARS.length));
+            int randomInt = secRandom.nextInt(CHARS.length);
             String rand = String.valueOf(CHARS[randomInt]);
             sRand.append(rand);
         }

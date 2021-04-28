@@ -61,12 +61,12 @@ public class SysUserController extends AbstractController {
 	@PostMapping("/password")
 	public Result password(@RequestBody PasswordForm form){
 		Assert.isBlank(form.getNewPassword(), "新密码不为能空");
-		
+
 		//sha256加密
 		String password = new Sha256Hash(form.getPassword(), getUser().getSalt()).toHex();
 		//sha256加密
 		String newPassword = new Sha256Hash(form.getNewPassword(), getUser().getSalt()).toHex();
-				
+
 		//更新密码
 		boolean flag = sysUserService.updatePassword(getUserId(), password, newPassword);
 		if(!flag){

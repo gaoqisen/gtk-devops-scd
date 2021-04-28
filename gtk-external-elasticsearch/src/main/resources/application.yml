@@ -1,12 +1,8 @@
 server:
   port: 8087
 spring:
-  data:
-    elasticsearch:
-      properties:
-        transport:
-          tcp:
-            connect_timeout: 120s
-      repositories:
-        enabled: true
-      cluster-nodes: localhost:9300
+  elasticsearch:
+    rest:
+      uris: localhost:9200
+      username: elastic
+      password: changeme

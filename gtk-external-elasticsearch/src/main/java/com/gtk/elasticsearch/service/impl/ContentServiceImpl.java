@@ -6,16 +6,21 @@ import com.gtk.elasticsearch.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
 import org.springframework.stereotype.Service;
 
-@Service
+@Service("contentService")
 public class ContentServiceImpl implements ContentService {
 
     @Autowired
     private ContentRepository contentRepository;
 
+    @Autowired
+    private ElasticsearchRestTemplate elasticsearchTemplate;
+
     @Override
     public void save(Content content) {
+        elasticsearchTemplate.createIndex(content.getClass());
         contentRepository.save(content);
     }
 

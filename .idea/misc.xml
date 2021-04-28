@@ -33,6 +33,7 @@
         <option value="$PROJECT_DIR$/gtk-devops-vue/pom.xml" />
         <option value="$PROJECT_DIR$/gtk-external-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/gtk-project-bsp/pom.xml" />
+        <option value="$PROJECT_DIR$/gtk-devops-study/pom.xml" />
       </list>
     </option>
   </component>
