@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.google.gson.Gson;
 import com.gtk.bsp.dao.SysConfigDao;
 import com.gtk.bsp.entity.SysConfigEntity;
-import com.gtk.bsp.exception.RRException;
+import com.gtk.bsp.exception.AppException;
 import com.gtk.bsp.service.SysConfigService;
 import com.gtk.bsp.utils.PageUtils;
 import com.gtk.bsp.utils.Query;
@@ -92,7 +92,7 @@ public class SysConfigServiceImpl extends ServiceImpl<SysConfigDao, SysConfigEnt
 		try {
 			return clazz.newInstance();
 		} catch (Exception e) {
-			throw new RRException("获取参数失败");
+			throw new AppException("获取参数失败");
 		}
 	}
 }

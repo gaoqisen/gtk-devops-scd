@@ -4,7 +4,7 @@ package com.gtk.bsp.controller;
 
 import com.gtk.bsp.annotation.SysLog;
 import com.gtk.bsp.entity.SysMenuEntity;
-import com.gtk.bsp.exception.RRException;
+import com.gtk.bsp.exception.AppException;
 import com.gtk.bsp.service.ShiroService;
 import com.gtk.bsp.service.SysMenuService;
 import com.gtk.bsp.utils.Constant;
@@ -142,17 +142,17 @@ public class SysMenuController extends AbstractController {
 	 */
 	private void verifyForm(SysMenuEntity menu){
 		if(StringUtils.isBlank(menu.getName())){
-			throw new RRException("菜单名称不能为空");
+			throw new AppException("菜单名称不能为空");
 		}
 		
 		if(menu.getParentId() == null){
-			throw new RRException("上级菜单不能为空");
+			throw new AppException("上级菜单不能为空");
 		}
 		
 		//菜单
 		if(menu.getType() == Constant.MenuType.MENU.getValue()){
 			if(StringUtils.isBlank(menu.getUrl())){
-				throw new RRException("菜单URL不能为空");
+				throw new AppException("菜单URL不能为空");
 			}
 		}
 		
@@ -167,7 +167,7 @@ public class SysMenuController extends AbstractController {
 		if(menu.getType() == Constant.MenuType.CATALOG.getValue() ||
 				menu.getType() == Constant.MenuType.MENU.getValue()){
 			if(parentType != Constant.MenuType.CATALOG.getValue()){
-				throw new RRException("上级菜单只能为目录类型");
+				throw new AppException("上级菜单只能为目录类型");
 			}
 			return ;
 		}
@@ -175,7 +175,7 @@ public class SysMenuController extends AbstractController {
 		//按钮
 		if(menu.getType() == Constant.MenuType.BUTTON.getValue()){
 			if(parentType != Constant.MenuType.MENU.getValue()){
-				throw new RRException("上级菜单只能为菜单类型");
+				throw new AppException("上级菜单只能为菜单类型");
 			}
 			return ;
 		}

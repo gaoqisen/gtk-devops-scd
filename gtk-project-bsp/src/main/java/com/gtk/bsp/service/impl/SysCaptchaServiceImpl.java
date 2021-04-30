@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.google.code.kaptcha.Producer;
 import com.gtk.bsp.dao.SysCaptchaDao;
 import com.gtk.bsp.entity.SysCaptchaEntity;
-import com.gtk.bsp.exception.RRException;
+import com.gtk.bsp.exception.AppException;
 import com.gtk.bsp.service.SysCaptchaService;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateUtils;
@@ -29,7 +29,7 @@ public class SysCaptchaServiceImpl extends ServiceImpl<SysCaptchaDao, SysCaptcha
     @Override
     public BufferedImage getCaptcha(String uuid) {
         if(StringUtils.isBlank(uuid)){
-            throw new RRException("uuid不能为空");
+            throw new AppException("uuid不能为空");
         }
         //生成文字验证码
         String code = producer.createText();

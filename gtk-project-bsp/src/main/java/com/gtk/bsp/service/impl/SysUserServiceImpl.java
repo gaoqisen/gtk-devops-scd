@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import com.gtk.bsp.dao.SysUserDao;
 import com.gtk.bsp.entity.SysUserEntity;
-import com.gtk.bsp.exception.RRException;
+import com.gtk.bsp.exception.AppException;
 import com.gtk.bsp.service.SysRoleService;
 import com.gtk.bsp.service.SysUserRoleService;
 import com.gtk.bsp.service.SysUserService;
@@ -132,7 +132,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserDao, SysUserEntity> i
 
 		//判断是否越权
 		if(!roleIdList.containsAll(user.getRoleIdList())){
-			throw new RRException("新增用户所选角色，不是本人创建");
+			throw new AppException("新增用户所选角色，不是本人创建");
 		}
 	}
 }

@@ -13,6 +13,7 @@ target/
 .idea
 *.iws
 *.iml
+*.class
 *.ipr
 
 ## JRebel ##

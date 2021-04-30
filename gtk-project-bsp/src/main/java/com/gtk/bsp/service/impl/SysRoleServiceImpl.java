@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import com.gtk.bsp.dao.SysRoleDao;
 import com.gtk.bsp.entity.SysRoleEntity;
-import com.gtk.bsp.exception.RRException;
+import com.gtk.bsp.exception.AppException;
 import com.gtk.bsp.service.SysRoleMenuService;
 import com.gtk.bsp.service.SysRoleService;
 import com.gtk.bsp.service.SysUserRoleService;
@@ -111,7 +111,7 @@ public class SysRoleServiceImpl extends ServiceImpl<SysRoleDao, SysRoleEntity> i
 		
 		//判断是否越权
 		if(!menuIdList.containsAll(role.getMenuIdList())){
-			throw new RRException("新增角色的权限，已超出你的权限范围");
+			throw new AppException("新增角色的权限，已超出你的权限范围");
 		}
 	}
 }

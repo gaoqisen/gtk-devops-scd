@@ -3,7 +3,7 @@
 package com.gtk.bsp.utils;
 
 
-import com.gtk.bsp.exception.RRException;
+import com.gtk.bsp.exception.AppException;
 import org.springframework.util.StringUtils;
 
 /**
@@ -13,13 +13,13 @@ public abstract class Assert {
 
     public static void isBlank(String str, String message) {
         if (StringUtils.isEmpty(str)) {
-            throw new RRException(message);
+            throw new AppException(message);
         }
     }
 
     public static void isNull(Object object, String message) {
         if (object == null) {
-            throw new RRException(message);
+            throw new AppException(message);
         }
     }
 }

@@ -6,8 +6,12 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.util.Date;
+
+import com.gtk.bsp.annotation.MaxLength;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.NotBlank;
 
 @Data
 @NoArgsConstructor
@@ -20,6 +24,8 @@ public class SysCodeMenu implements Serializable {
      * 系统ID
      */
     @TableField(value = "sys_id")
+    @NotBlank(message = "系统ID不能为空")
+    @MaxLength(message = "超长", maxLength = 5)
     private String sysId;
 
     /**

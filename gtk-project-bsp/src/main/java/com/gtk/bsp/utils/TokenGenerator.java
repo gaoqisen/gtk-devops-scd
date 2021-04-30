@@ -1,7 +1,7 @@
 package com.gtk.bsp.utils;
 
 
-import com.gtk.bsp.exception.RRException;
+import com.gtk.bsp.exception.AppException;
 
 import java.security.MessageDigest;
 import java.util.UUID;
@@ -37,7 +37,7 @@ public class TokenGenerator {
             byte[] messageDigest = algorithm.digest();
             return toHexString(messageDigest);
         } catch (Exception e) {
-            throw new RRException("生成Token失败", e);
+            throw new AppException("生成Token失败", e);
         }
     }
 }
