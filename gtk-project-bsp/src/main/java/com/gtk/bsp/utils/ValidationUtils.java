@@ -16,8 +16,8 @@ public class ValidationUtils {
     private static Validator validation = Validation.buildDefaultValidatorFactory().getValidator();
 
     /**
-     * 校验实体
-     * @param obj 需要校验的对象
+     * 校验是比
+     * @param obj
      */
     public static void validationEntity(Object obj) {
         Set<ConstraintViolation<Object>> constraintViolations = validation.validate(obj);
