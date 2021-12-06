@@ -22,6 +22,7 @@ public class BubbleSort {
         a[start] = a[end];
         a[end] = temp;
     }
+
     static void print(int[] a) {
         // 输出
         for (int i = 0; i < a.length; i++) {

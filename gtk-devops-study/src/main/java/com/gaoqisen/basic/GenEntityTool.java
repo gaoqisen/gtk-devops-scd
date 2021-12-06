@@ -32,7 +32,25 @@ public class GenEntityTool {
                 TableInfo.builder().columnName("nameA").dataType("integer").columnComment("名称").columnLength(12).isNull(true).build(),
                 TableInfo.builder().columnName("age").dataType("string").columnComment("年龄").build()
         );
-        createVo(list);
+
+        // 遍历字段
+        for (TableInfo tableInfo : list) {
+            StringBuilder out = new StringBuilder();
+            out.append("    /**\n" +
+                    "     * " + tableInfo.getColumnComment() + "\n" +
+                    "     */ " + "\n");
+            if (!tableInfo.isNull) {
+                out.append("    @NotBlank\n");
+            }
+            if (tableInfo.columnLength != null) {
+                out.append("    @Size(max = " + tableInfo.columnLength + ", message = \"" + tableInfo.getColumnComment() + "长度不能超过" + tableInfo.columnLength + "\")\n");
+            }
+            out.append("    @ApiModelProperty(\"" + tableInfo.getColumnComment() + "\")\n");
+            out.append("    private ").append(StringUtil.typeMapping(tableInfo.getDataType())).append(" ").append(StringUtil.camelCaseName(tableInfo.getColumnName())).append("\n");
+            System.out.println(out.toString());
+
+        }
+        // createVo(list);
     }
 
     /**
@@ -88,21 +106,6 @@ public class GenEntityTool {
         );
         //遍历设置属性
         for (TableInfo tableInfo : tableInfos) {
-            StringBuilder out = new StringBuilder();
-            out.append("    /**\n" +
-                       "     * " + tableInfo.getColumnComment() + "\n" +
-                       "     */ " + "\n");
-            if(!tableInfo.isNull) {
-                out.append("    @NotBlank\n");
-            }
-            if(tableInfo.columnLength != null) {
-                out.append("    @Size(max = " + tableInfo.columnLength + ", message = \"" + tableInfo.getColumnComment() + "长度不能超过" + tableInfo.columnLength + "\")\n");
-            }
-            out.append("    @ApiModelProperty(\"" + tableInfo.getColumnComment() + "\")\n");
-            out.append("    private ").append(StringUtil.typeMapping(tableInfo.getDataType())).append(" ").append(StringUtil.camelCaseName(tableInfo.getColumnName())).append("\n");
-            System.out.println(out.toString());
-
-
             stringBuilder.append("    private ").append(StringUtil.typeMapping(tableInfo.getDataType())).append(" ").append(StringUtil.camelCaseName(tableInfo.getColumnName())).append(";//").append(tableInfo.getColumnComment()).append("\n\n");
         }
         stringBuilder.append("}");

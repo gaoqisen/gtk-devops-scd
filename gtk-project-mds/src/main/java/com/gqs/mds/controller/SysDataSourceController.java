@@ -1,7 +1,8 @@
 package com.gqs.mds.controller;
 
-import com.gqs.mds.entity.SysDataSource;
-import com.gqs.mds.service.SysDataSourceService;
+import com.github.gaoqisen.annotation.DataSourceSwitch;
+import com.github.gaoqisen.entity.SysDataSource;
+import com.github.gaoqisen.service.SysDataSourceService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -28,6 +29,7 @@ public class SysDataSourceController {
      * @return 单条数据
      */
     @GetMapping("selectOne")
+    @DataSourceSwitch(dataSourceNo = "sdf")
     public SysDataSource selectOne(Long id) {
         return this.sysDataSourceService.queryById(id);
     }
