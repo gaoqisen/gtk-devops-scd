@@ -1,4 +1,4 @@
-package com.gqs.algorithm.sparsearray;
+package com.gqs.algorithm;
 
 /**
  * 稀疏数组

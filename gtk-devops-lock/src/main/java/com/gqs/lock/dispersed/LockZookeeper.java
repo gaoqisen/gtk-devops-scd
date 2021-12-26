@@ -1,4 +1,4 @@
-package com.gqs.lock.config;
+package com.gqs.lock.dispersed;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.*;
@@ -26,7 +26,7 @@ import java.util.concurrent.CountDownLatch;
  *   直接删除临时节点
  */
 @Slf4j
-public class ZkLock implements AsyncCallback.StringCallback , AsyncCallback.Children2Callback, Watcher, Closeable {
+public class LockZookeeper implements AsyncCallback.StringCallback , AsyncCallback.Children2Callback, Watcher, Closeable {
 
     private final CountDownLatch downLatch = new CountDownLatch(1);
     private static final ZooKeeper zooKeeper = InitZookeeper.getZk();
@@ -34,8 +34,8 @@ public class ZkLock implements AsyncCallback.StringCallback , AsyncCallback.Chil
     private String lockSeqName;
     private String threadName;
 
-    public static ZkLock build() {
-        return new ZkLock();
+    public static LockZookeeper build() {
+        return new LockZookeeper();
     }
 
     /**
@@ -53,13 +53,14 @@ public class ZkLock implements AsyncCallback.StringCallback , AsyncCallback.Chil
      * EPHEMERAL_SEQUENTIAL: 临时顺序型
      * @param lockName 锁名
      */
-    public synchronized ZkLock tryLock(String lockName) {
+    public synchronized LockZookeeper tryLock(String lockName) {
         threadName = Thread.currentThread().getName();
 
         try {
             // 判断锁目录是否存在，不存在则创建
             catalogExistsHandle(lockName);
-            zooKeeper.create(catalog.concat("/" + lockName), threadName.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL,this, "create catalog");
+            zooKeeper.create(catalog.concat("/" + lockName), threadName.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE,
+                    CreateMode.EPHEMERAL_SEQUENTIAL,this, "create catalog");
             log.info("获取锁 lockName: {}, threadName: {}", lockName, threadName);
             downLatch.await();
         } catch (Exception e) {
@@ -162,7 +163,8 @@ public class ZkLock implements AsyncCallback.StringCallback , AsyncCallback.Chil
      */
     @Override
     public void process(WatchedEvent watchedEvent) {
-        log.info("上一个节点监听事件 threadName: {}, watchedEvent: {}, path: {}", threadName, watchedEvent.getType().name(), watchedEvent.getPath());
+        log.info("上一个节点监听事件 threadName: {}, watchedEvent: {}, path: {}", threadName,
+                watchedEvent.getType().name(), watchedEvent.getPath());
         Event.EventType state = watchedEvent.getType();
         if (state == Event.EventType.NodeDeleted) {
             zooKeeper.getChildren(catalog, false, this, "watch up node");

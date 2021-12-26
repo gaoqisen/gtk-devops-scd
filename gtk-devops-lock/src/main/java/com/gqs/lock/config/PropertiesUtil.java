@@ -7,41 +7,39 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
+/**
+ * 给静态属性注入bean
+ */
 @Component
 public class PropertiesUtil {
 
+    /**
+     * 方案一：
+     * 利用PostConstruct将普通属性值赋给静态成员
+     *
+     * PostConstruct注解不可以有参数的
+     */
     @Autowired
     private Environment environment;
-    private static Environment env;
+    private static Environment envOne;
 
-    /**
-     * 给static注入方案一：
-     */
-    //PostConstruct注解不可以有参数的
+
     @PostConstruct
     public void init(){
-        env = this.environment;
+        envOne = this.environment;
     }
 
-    public static String getDubboAddress(){
-        String type = env.getProperty("dubbo.registry.address");
-        return type;
-    }
+
+    /**
+     * 方案二：
+     * 静态类直接用构造器注入方式给静态属性赋值
+     */
+    private static Environment envTwo;
 
     @Component
     public static class InitEnvironment{
-
-        private Environment environment;
-
         public InitEnvironment(Environment environment) {
-            this.environment = environment;
+            envTwo = environment;
         }
-
-        public Environment getEnv() {
-            return environment;
-        }
-
     }
-
-
 }

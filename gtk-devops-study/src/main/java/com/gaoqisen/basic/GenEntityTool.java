@@ -29,9 +29,24 @@ public class GenEntityTool {
         //拼接完整最终位置 System.getProperty("user.dir") 获取的是项目所在路径，如果我们是子项目，则需要添加一层路径
         filePath = System.getProperty("user.dir") + "\\src\\main\\java\\" + filePackage;
         List<TableInfo> list = Arrays.asList(
-                TableInfo.builder().columnName("nameA").dataType("integer").columnComment("名称").columnLength(12).isNull(true).build(),
-                TableInfo.builder().columnName("age").dataType("string").columnComment("年龄").build()
-        );
+                TableInfo.builder().columnName("billNo").dataType("string").columnComment("票据号码").build(),
+                TableInfo.builder().columnName("discountDt").dataType("string").columnComment("贴现日期").build(),
+                TableInfo.builder().columnName("billTp").dataType("string").columnComment("票据类型").build(),
+                TableInfo.builder().columnName("drawBillDt").dataType("string").columnComment("出票日期").build(),
+                TableInfo.builder().columnName("billEndDt").dataType("string").columnComment("票据到期日期").build(),
+                TableInfo.builder().columnName("brrNm").dataType("string").columnComment("持票人名称").build(),
+                TableInfo.builder().columnName("acctNo").dataType("string").columnComment("账号").build(),
+                TableInfo.builder().columnName("brrOpnAcctBnkNo").dataType("string").columnComment("持票人开户行行号").build(),
+                TableInfo.builder().columnName("brrOpnAcctBnkNm").dataType("string").columnComment("持票人开户行行名").build(),
+                TableInfo.builder().columnName("stickInPrsnOpnBnkNo").dataType("string").columnComment("贴入人开户行行号").build(),
+                TableInfo.builder().columnName("stickInPrsnNm").dataType("string").columnComment("贴入人名称").build(),
+                TableInfo.builder().columnName("drftAmt").dataType("double").columnComment("汇票金额").build(),
+                TableInfo.builder().columnName("dcnIntRate").dataType("double").columnComment("贴现利率").build(),
+                TableInfo.builder().columnName("discountInt").dataType("double").columnComment("贴现利息").build(),
+                TableInfo.builder().columnName("setlAmt").dataType("double").columnComment("结算金额").build()
+
+
+                );
 
         // 遍历字段
         for (TableInfo tableInfo : list) {
@@ -40,13 +55,13 @@ public class GenEntityTool {
                     "     * " + tableInfo.getColumnComment() + "\n" +
                     "     */ " + "\n");
             if (!tableInfo.isNull) {
-                out.append("    @NotBlank\n");
+               // out.append("    @NotBlank\n");
             }
             if (tableInfo.columnLength != null) {
                 out.append("    @Size(max = " + tableInfo.columnLength + ", message = \"" + tableInfo.getColumnComment() + "长度不能超过" + tableInfo.columnLength + "\")\n");
             }
             out.append("    @ApiModelProperty(\"" + tableInfo.getColumnComment() + "\")\n");
-            out.append("    private ").append(StringUtil.typeMapping(tableInfo.getDataType())).append(" ").append(StringUtil.camelCaseName(tableInfo.getColumnName())).append("\n");
+            out.append("    private ").append(StringUtil.typeMapping(tableInfo.getDataType())).append(" ").append(StringUtil.camelCaseName(tableInfo.getColumnName())).append(";\n");
             System.out.println(out.toString());
 
         }
@@ -183,7 +198,7 @@ public class GenEntityTool {
             if ("int|integer".contains(dbType)) {
                 javaType = "Integer";
             } else if ("float|double|decimal|real".contains(dbType)) {
-                javaType = "Double";
+                javaType = "BigDecimal";
             } else if ("date|time|datetime|timestamp".contains(dbType)) {
                 javaType = "Date";
             } else {

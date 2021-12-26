@@ -1,9 +1,7 @@
 package com.gqs.lock;
 
-import com.gqs.lock.config.RedisLock;
-import com.gqs.lock.config.ZkLock;
+import com.gqs.lock.dispersed.LockZookeeper;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.dubbo.common.utils.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -17,10 +15,16 @@ import java.util.concurrent.Executors;
 @Slf4j
 class LockApplicationTests {
 
-    int countSum = 0;
-    int forCount = 5;
-    int threadCount = 5;
-    CountDownLatch count = new CountDownLatch(1);
+    // 争抢的数据
+    int sum = 0;
+
+    // 循环的数量
+    int forCount = 10;
+
+    // 线程数量
+    int threadCount = 1000;
+
+    CountDownLatch count = new CountDownLatch(forCount * threadCount);
     ExecutorService executorService = Executors.newFixedThreadPool(100);
 
     @Test
@@ -32,28 +36,49 @@ class LockApplicationTests {
         }
         count.await();
         executorService.shutdown();
-        Assertions.assertEquals(forCount, countSum);
-        log.info("分布式锁 threadCount: {}, forCount: {}, countSum: {}, 耗时: {}s", threadCount, forCount, countSum, (System.currentTimeMillis() - startTime)/1000);
+        Assertions.assertEquals(sum, forCount * threadCount);
+        log.info("分布式锁 threadCount: {}, forCount: {}, sum: {}, 耗时: {}s", threadCount, forCount, sum, (System.currentTimeMillis() - startTime)/1000);
     }
 
 
     public void testThread(String lockName) {
-        final int[] sum = {0};
         for (int i = 0; i < threadCount; i++) {
             executorService.submit(() -> {
-                ZkLock lock = ZkLock.build().tryLock(lockName);
+                LockZookeeper lock = LockZookeeper.build().tryLock(lockName);
                 // RedisLock lock = RedisLock.build().tryLock(lockName);
-                sum[0]++;
-                if(sum[0] == threadCount) {
-                    countSum++;
-                    if(countSum == forCount) {
-                        count.countDown();
-                    }
-                    System.out.println("锁没有问题: " + countSum);
+
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
                 }
+                sum++;
+                if(sum % threadCount == 0) {
+                    System.out.println("锁没有问题: " + sum);
+                }
+                count.countDown();
                 lock.unLock();
+
             });
         }
+    }
+
+
+    @Test
+    void testThread() throws InterruptedException {
+        for (int i = 0; i < threadCount*forCount; i++) {
+            executorService.submit(() -> {
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                sum++;
+                count.countDown();
+            });
+        }
+        count.await();
+        Assertions.assertEquals(threadCount*forCount, sum);
     }
 
 }

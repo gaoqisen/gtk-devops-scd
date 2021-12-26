@@ -1,7 +1,6 @@
 package com.gqs.lock.controller;
 
-import com.gqs.lock.config.RedisLock;
-import com.gqs.lock.config.ZkLock;
+import com.gqs.lock.dispersed.LockRedis;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -21,7 +20,7 @@ public class TestController {
 
     @GetMapping("zookeeper")
     public void zookeeper() throws InterruptedException {
-        RedisLock zkLock = RedisLock.build().tryLock("zkLocktTest");
+        LockRedis zkLock = LockRedis.build().tryLock("zkLocktTest");
         Thread.sleep(2000);
         zkLock.unLock();
     }

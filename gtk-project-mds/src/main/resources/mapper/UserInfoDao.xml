@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gqs.mds.dao.UserInfoDao">
+
+    <resultMap id="BaseResultMap" type="com.gqs.mds.entity.UserInfo">
+        <!--@Table user_info-->
+        <result property="id" column="id" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="age" column="age" jdbcType="VARCHAR"/>
+        <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+        <result property="deleteflag" column="deleteFlag" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询指定行数据-->
+    <select id="queryAllByLimit" resultMap="BaseResultMap">
+        select
+          id, name, age, birthday, deleteFlag
+        from test.user_info
+        limit #{offset}, #{limit}
+    </select>
+
+    <!--通过实体作为筛选条件查询-->
+    <select id="queryOne" resultMap="BaseResultMap">
+        select
+          id, name, age, birthday, deleteFlag
+        from test.user_info
+        <where>
+            <if test="id != null and id != ''">
+                and id = #{id}
+            </if>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+            <if test="age != null and age != ''">
+                and age = #{age}
+            </if>
+            <if test="birthday != null">
+                and birthday = #{birthday}
+            </if>
+            <if test="deleteflag != null and deleteflag != ''">
+                and deleteFlag = #{deleteflag}
+            </if>
+        </where>
+    </select>
+
+
+
+</mapper>

@@ -48,7 +48,7 @@
 <!--      scope compile： 默认：compile表示被依赖项目需要参与当前项目的编译，当然后续的测试，运行周期也参与其中，是一个比较强的依赖。打包的时候通常需要包含进去。
                 test：scope为test表示依赖项目仅仅参与测试相关的工作，包括测试代码的编译，执行。比较典型的如junit。
                 runntime：表示被依赖项目无需参与项目的编译，不过后期的测试和运行周期需要其参与
-                provided：(依赖由容器提供)意味着打包的时候可以不用包进去，别的设施(Web Container)会提供。事实上该依赖理论上可以参与编译，测试，运行等周期
+                provided：依赖不传递（依赖方必需有）(依赖由容器提供)意味着打包的时候可以不用包进去，别的设施(Web Container)会提供。事实上该依赖理论上可以参与编译，测试，运行等周期
                 system：从参与度来说，也provided相同，不过被依赖项不会从maven仓库抓，而是从本地文件系统拿，一定需要配合systemPath属性使用
                 import： 引入单独的pom文件（import只能用在dependencyManagement里面,且仅用于type=pom的dependency），单一职责原则，根据依赖的分类，细化每一个单一职责的pom文件 。
     -->
@@ -66,7 +66,7 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>dubbo</artifactId>
                 <version>${dubbo.version}</version>
-                <!-- 此功能/此依赖可选，如果不需要某项功能，可以不引用这个包 -->
+                <!-- 依赖不传递（依赖方可以不依赖） 此功能/此依赖可选，如果不需要某项功能，可以不引用这个包 -->
                 <optional>true</optional>
             </dependency>
             <dependency>

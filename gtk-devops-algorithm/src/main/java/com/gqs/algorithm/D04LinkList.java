@@ -1,4 +1,6 @@
-package com.gqs.algorithm.sparsearray;
+package com.gqs.algorithm;
+
+import java.util.Stack;
 
 public class D04LinkList {
 
@@ -14,6 +16,9 @@ public class D04LinkList {
         list.addOrder(hero2);
         list.addOrder(hero3);
         list.list();
+        System.out.println("逆序打印");
+        list.reversePrint();
+
         System.out.println("反转");
         list.reverse();
         list.list();
@@ -29,6 +34,8 @@ public class D04LinkList {
         list.update(hero4);
         list.list();
         System.out.println(list.size());
+
+
     }
 
 }
@@ -36,6 +43,26 @@ public class D04LinkList {
 class LinkHeroList{
 
     Hero head = new Hero();
+
+    /**
+     * 从尾到头打印单链表
+     */
+    public void reversePrint(){
+        if(head.getNext() == null) {
+            return;
+        }
+
+        Stack<Hero> stack = new Stack<>();
+        Hero temp = head.getNext();
+        while (temp != null) {
+            stack.push(temp);
+            temp = temp.getNext();
+        }
+
+        while (stack.size() > 0) {
+            System.out.println(stack.pop().toString());
+        }
+    }
 
     /**
      * 反转
