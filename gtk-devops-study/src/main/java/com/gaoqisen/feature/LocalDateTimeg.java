@@ -8,6 +8,7 @@ import java.util.Date;
 public class LocalDateTimeg {
 
     public static void main(String[] args) {
+        System.out.println("当前时间" + LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd")));
         System.out.println("当前时间戳: " + LocalDateTime.now().toEpochSecond(ZoneOffset.of("+8")));
         System.out.println("当前时间戳: " + LocalDateTime.now().toInstant(ZoneOffset.of("+8")).toEpochMilli());
         System.out.println("当前时间戳: " + new Date().getTime());

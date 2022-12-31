@@ -12,7 +12,7 @@ public class T01_ReentrantLockTest {
     }
 
     public void m1() {
-        new Thread(() -> {
+     //   new Thread(() -> {
             try{
                 lock.lock();
                 System.out.println("m1...");
@@ -25,18 +25,18 @@ public class T01_ReentrantLockTest {
             }finally {
                 lock.unlock();
             }
-        }).start();
+    //    }).start();
     }
 
     public void m2() {
-        new Thread(() -> {
+     //   new Thread(() -> {
             try{
                 lock.lock();
                 System.out.println("m2...");
             } finally {
                 lock.unlock();
             }
-        }).start();
+   //     }).start();
     }
 
 }

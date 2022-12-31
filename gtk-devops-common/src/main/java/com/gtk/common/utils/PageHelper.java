@@ -39,4 +39,18 @@ public class PageHelper {
             }
         }
     }
+
+    public static void main(String[] args) {
+
+        // 总条数
+        int totalRow = 101;
+        // 每页记录数
+        int pageSize = 10;
+        // 总页数
+        int totalPage = (totalRow - 1) / pageSize + 1;
+
+        System.out.println(totalPage);
+
+    }
+
 }

@@ -1,0 +1,54 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+title SAML、OAuth
+
+'一些外观设置
+skinparam sequenceArrowThickness 1.5
+skinparam roundcorner 1
+skinparam maxmessagesize 1
+skinparam backgroundColor while
+skinparam handwritten true
+skinparam sequence {
+    ArrowColor black
+    ActorBorderColor orange
+    LifeLineBorderColor black
+    LifeLineBackgroundColor DarkSeaGreen
+    ParticipantBorderColor DarkSeaGreen
+    ParticipantBackgroundColor default
+    ParticipantFontName Impact
+    ParticipantFontSize 17
+    ParticipantFontColor #DarkSeaGreen
+    ActorFontColor black
+    ActorFontSize 17
+    ActorFontName Aapex
+}
+
+autonumber
+
+alt OAuth
+    浏览器 -[#red]> 网站: 用户点击按钮
+    网站 -[#red]> 浏览器: 未登陆提示用户登陆
+    浏览器 -[#red]> 授权服务: 用户点击QQ登陆重定向到QQ服务器
+    浏览器 <[#red]- 授权服务: QQ响应code=xxx
+    浏览器 -[#red]> 网站: 通过code获取数据
+    网站 <[#red]-> 授权服务: 通过code和密钥获取token
+    网站 <[#red]-> 授权服务: 通过token获取用户数据
+    网站 -[#red]> 浏览器: 返回结果
+end
+
+autonumber
+
+alt Saml + AES
+    浏览器 -[#red]> 网站: 用户点击按钮
+    网站 -[#red]> 浏览器: 未登陆提示用户登陆
+    浏览器 -[#red]> 网站: 用户点击QQ登陆
+    网站 -[#red]> 授权服务: 发送saml请求认证
+    网站 -[#red]> 授权服务: 重定向到授权服务
+    授权服务 <-[#red]> 浏览器: 响应登陆页面/用户完成登陆响应SamlToken（AES加密）
+    浏览器 -[#red]> 网站: 通过SamlToken获取数据
+    网站 <[#red]-> 网站: 校验token解密token
+    网站 -[#red]> 浏览器: 返回结果
+end
+
+@enduml

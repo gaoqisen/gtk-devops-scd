@@ -10,4 +10,10 @@ public class TestServiceImpl implements TestService{
     public String hello(String name) {
         return name + "你好";
     }
+
+    @Override
+    public String hello1(String name) {
+        return name + "你好";
+    }
+
 }

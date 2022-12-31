@@ -52,7 +52,7 @@ public class MapTest {
      * 利用cas实现
      */
     private static void concurrentHashMap() {
-        Map<String, String> concurrentHashMap = new ConcurrentHashMap<>();
+        ConcurrentHashMap<String, String> concurrentHashMap = new ConcurrentHashMap<>();
         concurrentHashMap.put("1", "1");
         concurrentHashMap.put("3", "2");
         concurrentHashMap.put("5", "4");
@@ -95,7 +95,7 @@ public class MapTest {
      * 底层是红黑树
      */
     private static void treeMap() {
-        Map<String, String> treeMap = new TreeMap<>();
+        TreeMap<String, String> treeMap = new TreeMap<>();
         treeMap.put("1", "1");
         treeMap.put("3", "2");
         treeMap.put("5", "4");
@@ -108,7 +108,7 @@ public class MapTest {
      */
     private static void linkedHashMap() {
 
-        Map<String, String> linkedHashMap = new LinkedHashMap<>();
+        LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
         linkedHashMap.put("1", "1");
         linkedHashMap.put("3", "2");
         linkedHashMap.put("5", "4");

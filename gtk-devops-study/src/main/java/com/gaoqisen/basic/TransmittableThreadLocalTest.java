@@ -15,7 +15,7 @@ public class TransmittableThreadLocalTest {
         InheritableValue.set("123");
 
         new Thread( () -> {
-            for (int i = 0; i < 10; i++) {
+             for (int i = 0; i < 10; i++) {
                 executorService.execute(TransmittableThreadLocalTest::sleepPrint);
             }
         }).start();

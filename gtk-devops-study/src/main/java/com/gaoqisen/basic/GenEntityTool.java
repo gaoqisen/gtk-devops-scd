@@ -9,6 +9,9 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 实体生成
+ */
 public class GenEntityTool {
     /**
      * 程序自动设置
@@ -29,21 +32,13 @@ public class GenEntityTool {
         //拼接完整最终位置 System.getProperty("user.dir") 获取的是项目所在路径，如果我们是子项目，则需要添加一层路径
         filePath = System.getProperty("user.dir") + "\\src\\main\\java\\" + filePackage;
         List<TableInfo> list = Arrays.asList(
-                TableInfo.builder().columnName("billNo").dataType("string").columnComment("票据号码").build(),
-                TableInfo.builder().columnName("discountDt").dataType("string").columnComment("贴现日期").build(),
-                TableInfo.builder().columnName("billTp").dataType("string").columnComment("票据类型").build(),
-                TableInfo.builder().columnName("drawBillDt").dataType("string").columnComment("出票日期").build(),
-                TableInfo.builder().columnName("billEndDt").dataType("string").columnComment("票据到期日期").build(),
-                TableInfo.builder().columnName("brrNm").dataType("string").columnComment("持票人名称").build(),
-                TableInfo.builder().columnName("acctNo").dataType("string").columnComment("账号").build(),
-                TableInfo.builder().columnName("brrOpnAcctBnkNo").dataType("string").columnComment("持票人开户行行号").build(),
-                TableInfo.builder().columnName("brrOpnAcctBnkNm").dataType("string").columnComment("持票人开户行行名").build(),
-                TableInfo.builder().columnName("stickInPrsnOpnBnkNo").dataType("string").columnComment("贴入人开户行行号").build(),
-                TableInfo.builder().columnName("stickInPrsnNm").dataType("string").columnComment("贴入人名称").build(),
-                TableInfo.builder().columnName("drftAmt").dataType("double").columnComment("汇票金额").build(),
-                TableInfo.builder().columnName("dcnIntRate").dataType("double").columnComment("贴现利率").build(),
-                TableInfo.builder().columnName("discountInt").dataType("double").columnComment("贴现利息").build(),
-                TableInfo.builder().columnName("setlAmt").dataType("double").columnComment("结算金额").build()
+                TableInfo.builder().columnName("totalAsset").dataType("string").columnComment("总资产").build(),
+                TableInfo.builder().columnName("netAssets").dataType("double").columnComment("净资产").build(),
+                TableInfo.builder().columnName("operatIncome").dataType("double").columnComment("营业收入").build(),
+                TableInfo.builder().columnName("netProfit").dataType("double").columnComment("净利润").build()
+
+
+
 
 
                 );
