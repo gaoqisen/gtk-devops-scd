@@ -6,7 +6,7 @@ import lombok.Data;
 /**
  * 数组实现队列和栈
  */
-public class ArrayToQueueAndStack {
+ public class T003_ArrayToQueueAndStack {
 
     public static void main(String[] args) {
         System.out.println("数组实现队列");

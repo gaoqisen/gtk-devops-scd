@@ -3,13 +3,13 @@ package com.gqs.algorithm.class001;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class QueueToStack {
+public class T001_QueueToStack {
 
     private Queue<Integer> push;
 
     private Queue<Integer> help;
 
-    public QueueToStack() {
+    public T001_QueueToStack() {
         this.push = new LinkedList<>();
         this.help = new LinkedList<>();
     }
@@ -30,7 +30,7 @@ public class QueueToStack {
     }
 
     public static void main(String[] args) {
-        QueueToStack queue = new QueueToStack();
+        T001_QueueToStack queue = new T001_QueueToStack();
         queue.push(1);
         queue.push(2);
         queue.push(3);

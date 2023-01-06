@@ -4,7 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
 import lombok.ToString;
 
-public class LinkedToQueueStack {
+class T001_PartitionAndQuickSort {
 
     public static void main(String[] args) {
         // 链表实现队列，先进先出

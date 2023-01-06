@@ -2,13 +2,13 @@ package com.gqs.algorithm.class001;
 
 import java.util.Stack;
 
-public class StackToQueue {
+public class T002_StackToQueue {
 
     private Stack<Integer> stackPush;
 
     private Stack<Integer> stackPop;
 
-    public StackToQueue() {
+    public T002_StackToQueue() {
         stackPop = new Stack<>();
         stackPush = new Stack<>();
     }
@@ -34,7 +34,7 @@ public class StackToQueue {
     }
 
     public static void main(String[] args) {
-        StackToQueue queue = new StackToQueue();
+        T002_StackToQueue queue = new T002_StackToQueue();
         queue.push(1);
         queue.push(2);
         queue.push(3);
