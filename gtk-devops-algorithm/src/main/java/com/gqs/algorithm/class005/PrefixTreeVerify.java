@@ -6,7 +6,7 @@ public class PrefixTreeVerify {
 
 
     public static void main(String[] args) {
-        T002PrefixTreeHash hash = new T002PrefixTreeHash();
+        T002_PrefixTreeHash hash = new T002_PrefixTreeHash();
         hash.insert("abc");
         hash.insert("abcd");
         hash.insert("abcde");
@@ -58,7 +58,7 @@ public class PrefixTreeVerify {
         int testTimes = 100000;
         for (int i = 0; i < testTimes; i++) {
             String[] arr = generateRandomStringArray(arrLen, strLen);
-            T002PrefixTreeHash trie1 = new T002PrefixTreeHash();
+            T002_PrefixTreeHash trie1 = new T002_PrefixTreeHash();
             Right right = new Right();
             for (int j = 0; j < arr.length; j++) {
                 double decide = Math.random();

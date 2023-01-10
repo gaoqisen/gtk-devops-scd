@@ -2,11 +2,11 @@ package com.gqs.algorithm.class005;
 
 import java.util.HashMap;
 
-public class T002PrefixTreeHash {
+public class T002_PrefixTreeHash {
 
     private Node root;
 
-    public T002PrefixTreeHash() {
+    public T002_PrefixTreeHash() {
         this.root = new Node();
     }
 
