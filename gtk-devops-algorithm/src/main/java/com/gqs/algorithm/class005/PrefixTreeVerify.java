@@ -16,7 +16,6 @@ public class PrefixTreeVerify {
         System.out.println(hash.findCount("abc"));
         System.out.println(hash.prefixCount("abc"));
 
-
         prefixTreeHashVerify();
 
         int arrLen = 100;
