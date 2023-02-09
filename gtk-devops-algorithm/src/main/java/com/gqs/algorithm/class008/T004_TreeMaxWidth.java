@@ -15,11 +15,51 @@ public class T004_TreeMaxWidth {
         head.left.left = new Node("D");
         head.left.right = new Node("E");
         head.right.left = new Node("F");
-
+        head.right.right = new Node("G");
+        head.right.left.left = new Node("H");
+        head.right.left.right = new Node("I");
         System.out.println(maxWidthUseMap(head));
+        System.out.println(maxWidth(head));
     }
 
+    public static int maxWidth(Node node) {
+        if(node == null) {
+            return 0;
+        }
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(node);
 
+        int max = 0;
+        int currentLevelNumber = 1;
+
+        Node currentRight = node;
+        Node nextRight = null;
+        while (!queue.isEmpty()) {
+            Node poll = queue.poll();
+            // 将左右节点放入队列，并赋值最右边的节点
+            if(poll.left != null) {
+                queue.add(poll.left);
+                nextRight = poll.left;
+            }
+
+            if(poll.right != null) {
+                queue.add(poll.right);
+                nextRight = poll.right;
+            }
+            currentLevelNumber++;
+            // 如果弹出的节点是下一个节点的最右节点，则初始化数据后进行下一层数量统计
+            if(poll == currentRight) {
+                max = Math.max(max, currentLevelNumber);
+                currentLevelNumber = 0;
+                currentRight = nextRight;
+            }
+        }
+        return max;
+    }
+
+    /**
+     * 获取二叉树的最大宽度，用map
+     */
     public static int maxWidthUseMap(Node head) {
         if(head == null) {
             return 0;
@@ -51,9 +91,9 @@ public class T004_TreeMaxWidth {
             }
             // 非同一个层级则遍历到了下一个层级，层级+1和获取最大层级数量
             else {
-                levelNumber = 1;
                 currentLevel++;
                 max = Math.max(max, levelNumber);
+                levelNumber = 1;
             }
         }
         return Math.max(levelNumber, max);
