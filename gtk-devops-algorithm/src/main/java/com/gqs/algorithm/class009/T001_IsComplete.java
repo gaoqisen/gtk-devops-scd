@@ -6,13 +6,13 @@ import java.util.Queue;
 /**
  * 是否完全二叉树
  */
-public class T001_IsFull {
+public class T001_IsComplete {
 
 
     /**
-     * 判断是否为满二叉树，非递归版
+     * 判断是否为完全二叉树，非递归版
      */
-    public static boolean isFull(Node node) {
+    public static boolean isComplete(Node node) {
         if(node == null) {
             return false;
         }
