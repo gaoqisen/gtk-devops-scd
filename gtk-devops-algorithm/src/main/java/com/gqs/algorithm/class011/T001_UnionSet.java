@@ -23,7 +23,7 @@ class UnionSet<V>{
 
     // 值对应自己的包装类
     private HashMap<V, Node<V>> nodes;
-    // 节点于父亲节点的对应关系
+    // 节点与父亲节点的对应关系
     private HashMap<Node<V>, Node<V>> parents;
     // 集合中的数量
     private HashMap<Node<V>, Integer> counts;
