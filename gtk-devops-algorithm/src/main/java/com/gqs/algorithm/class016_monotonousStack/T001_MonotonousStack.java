@@ -33,7 +33,7 @@ public class T001_MonotonousStack {
             }
             stack.push(i);
         }
-        // 将栈里面的值
+        // 弹出栈里面其他值
         while (!stack.isEmpty()) {
             // 弹出当前值
             int val = stack.pop();
